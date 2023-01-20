@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { StudentComponent } from './Student/student.component';
 import { ChildComponent } from './child/child.component';
 import { HomeComponent } from './home/home.component';
+import { OninitComponent } from './oninit/oninit.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
     StudentComponent,
     ChildComponent,
     HomeComponent,
+    OninitComponent,
   ],
   bootstrap: [AppComponent],
 })
