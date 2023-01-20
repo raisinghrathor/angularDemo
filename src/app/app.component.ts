@@ -20,4 +20,10 @@ export class AppComponent {
     console.log(val);
     this.child1 = val;
   }
+  randomdata: string = 'initial';
+  constructor() {
+    setTimeout(() => {
+      this.randomdata = 'final';
+    }, 5000);
+  }
 }
