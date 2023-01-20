@@ -1,5 +1,10 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<p>Hello {{user}}</p>
+<app-student></app-student>
+<app-child></app-child>
+<button (click)="Increment()">Increment</button>
+<button (click)="Decrement()">Decrement</button>
+<p>{{ child.count }}</p>
+
+<div class="container">
+  <input type="text" #id (keyup)="myFunc(id.value)" />
+  <app-home [myInput]="child1"></app-home>
+</div>
