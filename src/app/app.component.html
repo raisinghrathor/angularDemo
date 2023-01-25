@@ -1,17 +1,7 @@
-<app-student></app-student>
-<app-child></app-child>
-<button (click)="Increment()">Increment</button>
-<button (click)="Decrement()">Decrement</button>
-<p>{{ child.count }}</p>
 
-<div class="container">
-  <input type="text" #id (keyup)="myFunc(id.value)" />
-  <app-home [myInput]="child1"></app-home>
-</div>
+<div appcustomborder appElementClick>Hello this div element</div>
 
-<app-child [data]="randomdata"></app-child>
-<hr />
-<p>OnInit Example</p>
-<app-oninit [data]='randomdata'></app-oninit>
-
+<h2 appcolor>this is heading with custom color change effect</h2>
+<button appcolor >Change BG Color</button>
+<button appbuttonpress >Press Me!</button>
 

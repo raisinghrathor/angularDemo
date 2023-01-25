@@ -8,7 +8,13 @@ import { StudentComponent } from './Student/student.component';
 import { ChildComponent } from './child/child.component';
 import { HomeComponent } from './home/home.component';
 import { OninitComponent } from './oninit/oninit.component';
-
+import { BComponent } from './BComponent/BComponent.component';
+import { CComponent } from './BComponent/CComponent.component';
+import { AComponent } from './BComponent/AComponent.component';
+import { CustomBorder } from './customdirective/customborder.directive';
+import { ElementClick } from './customdirective/elementclick.directive';
+import { ChangeColorDirective } from './customdirective/changecolor.directive';
+import {ButtonPressDirective} from './customdirective/buttonpress.directive';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
@@ -18,6 +24,13 @@ import { OninitComponent } from './oninit/oninit.component';
     ChildComponent,
     HomeComponent,
     OninitComponent,
+    BComponent,
+    CComponent,
+    AComponent,
+    CustomBorder,
+    ElementClick,
+    ChangeColorDirective,
+    ButtonPressDirective
   ],
   bootstrap: [AppComponent],
 })

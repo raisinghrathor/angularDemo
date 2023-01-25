@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild,HostListener ,HostBinding} from '@angular/core';
 import { ChildComponent } from './child/child.component';
 @Component({
   selector: 'my-app',
@@ -21,9 +21,16 @@ export class AppComponent {
     this.child1 = val;
   }
   randomdata: string = 'initial';
+  @HostBinding('style.color') changecolor;
   constructor() {
     setTimeout(() => {
       this.randomdata = 'final';
     }, 5000);
+  }
+  @HostListener('mouseover') onMouseOver(){
+    this.changecolor='red';
+  }
+  @HostListener('mouseout')OnOut(){
+    this.changecolor='blue';
   }
 }
