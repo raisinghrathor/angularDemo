@@ -14,7 +14,9 @@ import { AComponent } from './BComponent/AComponent.component';
 import { CustomBorder } from './customdirective/customborder.directive';
 import { ElementClick } from './customdirective/elementclick.directive';
 import { ChangeColorDirective } from './customdirective/changecolor.directive';
-import {ButtonPressDirective} from './customdirective/buttonpress.directive';
+import { ButtonPressDirective } from './customdirective/buttonpress.directive';
+import { FriendComponent } from './friend/friend.component';
+import { BookDirective } from './customdirective/book.directive';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
@@ -30,7 +32,9 @@ import {ButtonPressDirective} from './customdirective/buttonpress.directive';
     CustomBorder,
     ElementClick,
     ChangeColorDirective,
-    ButtonPressDirective
+    ButtonPressDirective,
+    FriendComponent,
+    BookDirective,
   ],
   bootstrap: [AppComponent],
 })
