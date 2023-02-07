@@ -1,0 +1,24 @@
+
+<ng-container *ngFor="let emp of employees">
+  <div *ngIf="emp.empid">
+    {{ emp.empid }}- {{emp.empName}} -{{emp.experience}}
+  </div>
+</ng-container>
+<hr/>
+<ng-container *ngFor="let emp of employees">
+  <div *ngIf="emp.empid">
+  {{emp.empid}} {{emp.empName}} {{emp.city}} {{emp.experience}}
+  </div>
+ </ng-container> 
+ <table border="1" style="border-collapse:collapse;">
+  <ng-container *ngFor="let emp of employees">
+
+  <tr  *ngIf="emp.empid">
+    <td>{{emp.empid}}</td>
+    <td>{{emp.empName}}</td>
+    <td>{{emp.city}}</td>
+    <td>{{emp.experience}}</td>
+  </tr>
+</ng-container>
+ </table>
+ 

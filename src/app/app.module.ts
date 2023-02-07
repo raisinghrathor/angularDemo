@@ -17,6 +17,8 @@ import { ChangeColorDirective } from './customdirective/changecolor.directive';
 import { ButtonPressDirective } from './customdirective/buttonpress.directive';
 import { FriendComponent } from './friend/friend.component';
 import { BookDirective } from './customdirective/book.directive';
+import { MessageDirective } from './customdirective/message.directive';
+import { RsIfDirective } from './customdirective/rs-if.directive';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
@@ -35,6 +37,8 @@ import { BookDirective } from './customdirective/book.directive';
     ButtonPressDirective,
     FriendComponent,
     BookDirective,
+    MessageDirective,
+    RsIfDirective,
   ],
   bootstrap: [AppComponent],
 })
