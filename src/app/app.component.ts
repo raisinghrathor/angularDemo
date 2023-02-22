@@ -77,4 +77,6 @@ export class AppComponent implements AfterViewInit {
     { empid: 12345, empName: 'Peter', city: 'LA', experience: '7 years' },
     { empid: 432, empName: 'Rai', city: 'Gurgaon', experience: '5 Years' },
   ];
+
+  logoSourceURL=""
 }
