@@ -19,6 +19,7 @@ import { FriendComponent } from './friend/friend.component';
 import { BookDirective } from './customdirective/book.directive';
 import { MessageDirective } from './customdirective/message.directive';
 import { RsIfDirective } from './customdirective/rs-if.directive';
+import { CompanyListComponent } from './companylist/companylist.component';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
@@ -39,6 +40,7 @@ import { RsIfDirective } from './customdirective/rs-if.directive';
     BookDirective,
     MessageDirective,
     RsIfDirective,
+    CompanyListComponent,
   ],
   bootstrap: [AppComponent],
 })

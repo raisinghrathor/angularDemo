@@ -1,0 +1,19 @@
+<ng-template #companyList>
+  <table>
+    <tr>
+      <th>Company Id</th>
+      <th>Company Name</th>
+      <th>Website</th>
+    </tr>
+    <tr *ngFor="let company of companies">
+      <td>{{ company.CompanyID }}</td>
+      <td>{{ company.Name }}</td>
+      <td>
+        <a [href]="company.URL">{{ company.URL }}</a>
+      </td>
+    </tr>
+  </table>
+</ng-template>
+<ng-container>
+  <div *ngTemplateOutlet="companyList"></div>
+</ng-container>

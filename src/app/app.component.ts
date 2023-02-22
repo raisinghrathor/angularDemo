@@ -78,5 +78,5 @@ export class AppComponent implements AfterViewInit {
     { empid: 432, empName: 'Rai', city: 'Gurgaon', experience: '5 Years' },
   ];
 
-  logoSourceURL=""
+  logoSourceURL = '../logo/incedo.jpg';
 }
